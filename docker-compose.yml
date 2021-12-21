@@ -1,0 +1,25 @@
+version: '2'
+services:
+    card-shuffler:
+        container_name: card-shuffler
+        build:
+            context: card-shuffler
+            dockerfile: Dockerfile
+        image: card-shuffler:latest
+        ports:
+            - 28888:8080
+        networks:
+            - main-network
+    poker-hand-main:
+        container_name: poker-hand-main
+        build:
+            context: poker-hand-main
+            dockerfile: Dockerfile
+        image: poker-hand-main:latest
+        ports:
+            - 18888:8080
+        networks:
+            - main-network
+networks:
+    main-network:
+        driver: bridge

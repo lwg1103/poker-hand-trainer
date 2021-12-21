@@ -1,3 +1,6 @@
 [submodule "card-shuffler"]
 	path = card-shuffler
 	url = git@github.com:lwg1103/card-shuffler.git
+[submodule "poker-hand-main"]
+	path = poker-hand-main
+	url = git@github.com:lwg1103/poker-hand-main.git
