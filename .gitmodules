@@ -4,3 +4,6 @@
 [submodule "poker-hand-main"]
 	path = poker-hand-main
 	url = git@github.com:lwg1103/poker-hand-main.git
+[submodule "card-trainer"]
+	path = card-trainer
+	url = git@github.com:lwg1103/card-trainer.git
