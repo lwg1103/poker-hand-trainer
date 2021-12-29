@@ -10,6 +10,16 @@ services:
             - 28888:8080
         networks:
             - main-network
+    card-trainer:
+        container_name: card-trainer
+        build:
+            context: card-trainer
+            dockerfile: Dockerfile
+        image: card-trainer:latest
+        ports:
+            - 38888:8080
+        networks:
+            - main-network
     poker-hand-main:
         container_name: poker-hand-main
         build:
