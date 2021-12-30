@@ -7,3 +7,6 @@
 [submodule "card-trainer"]
 	path = card-trainer
 	url = git@github.com:lwg1103/card-trainer.git
+[submodule "card-hand-calc"]
+	path = card-hand-calc
+	url = git@github.com:lwg1103/card-hand-calc.git

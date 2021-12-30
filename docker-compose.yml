@@ -20,6 +20,16 @@ services:
             - 38888:8080
         networks:
             - main-network
+    card-hand-calc:
+        container_name: card-hand-calc
+        build:
+            context: card-hand-calc
+            dockerfile: Dockerfile
+        image: card-handcalculator:latest
+        ports:
+            - 48888:8080
+        networks:
+            - main-network
     poker-hand-main:
         container_name: poker-hand-main
         build:
